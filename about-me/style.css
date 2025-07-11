@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "Permanent Marker";
+  src: url(./fonts/PermanentMarker.ttf) format("truetype"),
+    url(./fonts/PermanentMarker.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter.ttf) format("truetype");
+}
+
+body,
+h1,
+h2,
+p,
+a {
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  font-family: "Inter", sans-serif;
+  background: rgb(245, 244, 244);
+}
+
+.header {
+  height: 100vh;
+  background-image: url(./images/Fondo.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.header-title {
+  font-family: "Permanent Marker", cursive;
+  font-size: 140px;
+  line-height: 140px;
+  color: white;
+  text-transform: uppercase;
+  max-width: 1240px;
+  margin: auto;
+  text-align: center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 790px;
+  margin: 100px auto 50px;
+}
+
+.card {
+  width: 350px;
+  margin-bottom: 60px;
+  padding: 45px 45px 70px 45px;
+  background: #fff;
+  box-shadow: 5px 5px 6px rgba(255, 16, 240, 0.4);
+  display: inline-block;
+  margin-right: 90px;
+}
+
+.no-right-margin{
+  margin-right: 0;
+  box-shadow: 5px 5px 6px rgba(129, 113, 250, 0.997);
+}
+
+.card-title {
+  font-family: "Permanent Marker", cursive;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: purple;
+  font-weight: 500;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color:orange;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.card-image {
+  height: 200px;
+  object-fit: contain;
+  width: 100%;
+  margin-bottom: 20px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.footer {
+  display: flex;
+  min-height: 300px;
+  background-color: #2a024b;
+}
+
+.footer-author{
+  color: white;
+  font-size: 24px;
+  margin: auto;
+}
